@@ -30,7 +30,7 @@ const NewNote = ({ User, RefreshNotes }) => {
 				Title
 				<input
 					type='text'
-					placeholder='Enter title here...'
+					placeholder='To update type same title'
 					value={Title}
 					onChange={(e) => setTitle(e.target.value)}
 				/>

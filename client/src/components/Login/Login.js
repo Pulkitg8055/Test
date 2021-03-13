@@ -8,6 +8,7 @@ const Login = ({ handleAuth, handleReg, AuthError, RegError, RegSuccess }) => {
 			<div className='row'>
 				<div className='col-6'>
 					<LoginForm handleAuth={handleAuth} Error={AuthError} />
+					<pre> Username: Pulkit Password: Hello123</pre>
 				</div>
 			</div>
 		</div>
