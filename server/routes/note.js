@@ -32,10 +32,12 @@ const Notes = [
 	},
 ];
 
+// Get request for
 note.get('/', (req, res) => {
 	res.json(Notes);
 });
 
+//Put request for updating the note if Title and User matches
 note.put('/', (req, res) => {
 	const { NoteID, Title, Desc, User } = req.body;
 	if (Notes.find((n) => n.Title !== Title && n.User !== User)) {
@@ -55,6 +57,7 @@ note.put('/', (req, res) => {
 	}
 });
 
+// Post request for creating new Note
 note.post('/', (req, res) => {
 	const { NoteID, Title, Desc, User } = req.body;
 	if (Notes.find((n) => n.NoteID === NoteID)) {

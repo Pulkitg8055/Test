@@ -1,5 +1,7 @@
 import Axios from 'axios';
 
+// Hitting api to server-side to AuthUser and LogoutUser
+
 export const CheckUser = () => Axios.get('/api/user');
 
 export const AuthUser = (username, password) =>
